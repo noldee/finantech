@@ -39,6 +39,7 @@ public class TransaccionController {
         existente.setEstado(transaccion.getEstado());
         existente.setDescripcion(transaccion.getDescripcion());
         existente.setFecha(transaccion.getFecha());
+        existente.setCliente(transaccion.getCliente());
         return ResponseEntity.ok(transaccionService.guardar(existente));
     }
 
